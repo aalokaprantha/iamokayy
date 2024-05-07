@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Heart Background</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: pink;
+    }
+    .container {
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h2>sana, chod diya maine khana peena, tum izazat do to kya tumhara ho jaae ye kameena? XD</h2>
+    <button onclick="yesClicked()">Yes</button>
+    <button onclick="noClicked()">No</button>
+</div>
+
+<script>
+function yesClicked() {
+    alert("ooooo thankksssssssssss bhyiiiiiiiiiii :D");
+}
+
+function noClicked() {
+    var element = document.querySelector(".container");
+    element.style.transition = "all 1s ease";
+    element.style.transform = "translateX(-100%)";
+    setTimeout(function(){
+        alert("tu jallad hi rahegi, pta h kitni mehnat lagi mujhe ise banane me T_T");
+    }, 1000);
+}
+</script>
+</body>
+</html>
